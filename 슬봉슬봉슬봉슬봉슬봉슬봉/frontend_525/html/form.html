@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- form.html -->
+    <article>
+        <h2>슨생넴 넘모 졸려요TnT</h2>
+        <p> 배가고파 </p>
+
+        <form action="https://loawa.com/" method="post">
+            <ul>
+                <li>
+                    <label for="check">아이디</label>
+                    <input
+                    type="text" name="name"
+                    id="check"
+                    placeholder="아이디를 입력하도록 하라"
+                    required
+                    maxlength="8"
+                    
+                    autocomplete="off">
+                </li>
+                <li>
+                    <label>비밀번호</label>
+                    <input type="password">
+                </li>
+                <li>
+                    <label>검색</label>
+                    <input type="search">
+                </li>
+                <li>
+                    <label>이메일</label>
+                    <input type="email" required>
+                </li>
+                <li>
+                    <label>연락처</label>
+                    <input type="tel" required>
+                </li>
+                <li>
+                    <label>췤췤</label>
+                    <input type="checkbox">
+                </li>
+                <li>
+                    <label>췤췤</label>
+                    <input type="checkbox" name="gen" >남
+                    <input type="checkbox" name="gen" checked>여
+                </li>
+                <li>
+                    <label>색상</label>
+                    <input type="color" value="#ff0000">
+                </li>
+                <li>
+                    <label>날짜</label>
+                    <input type="date" value="2024-06-12" min="2024-06-04" max="2024-06-28">
+                    <!-- date, month, week, time, datetime-local -->
+                </li>
+                <li>
+                    <label>숫자</label>
+                    <input type="number" value="1" min="1" max="5">
+                </li>
+                <li>
+                    <label>파일</label>
+                    <input type="file" multiple>
+                </li>
+                <li>
+                    <label>지역</label>
+                    <select multiple>
+                        <optgroup label="수도권">
+                            <option>서울</option>
+                            <option>경기</option>
+                            <option>인천</option>
+                        </optgroup>
+                    </select>
+                </li>
+                <li>
+                    <label>내용</label>
+                    <textarea cols="50" rows="5"></textarea>
+                </li>
+                <li>
+                    <input type="submit" value="누르면 해킹당함">
+                    <input type="reset" value="취소">
+                </li>
+            </ul>
+        </form>
+    </article>
+
+    <style>
+        ul{
+            margin:0; padding: 0;
+            list-style-position: inside;
+        }
+        li{padding: 15px; border-top: 1px solid gray;}
+        input{}
+        label{width: 100px; display: inline-block;}
+    </style>
+
+    <div class="ex1">
+        <input type="checkbox" id="check2">
+        <label for="check2"></label>
+    </div>
+    <style>
+        .ex1 input{}
+        .ex1 label{
+            width: 20px; height: 20px;
+            border-radius: 10px;
+            background-color: green;
+        }
+    </style>
+
+
+
+</body>
+</html>

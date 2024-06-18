@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* 구글 아이콘폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200');
+
+.icon{
+    font-family: 'Material Symbols Outlined';
+    font-size:60px;
+    color:red
+}
+
+.box-style{
+    border-bottom:1px solid black;
+    padding:80px;
+}
+
+.font{
+    white-space: pre-line;
+    font-size : 26px;
+    font-family: "Roboto", sans-serif;
+    font-weight:200;
+    font-style:italic;
+    color:#134ac1;
+    line-height:1.6;
+    text-decoration:none;
+    text-align:left;
+    text-transform : lowercase;  
+    letter-spacing:0px;
+}
+
+.m-p .ex{
+    border:1px solid red;
+    width:300px; height:300px;
+
+    margin:50px auto;
+}
+
+.m-p .ex2{
+    border:1px solid blue;
+    width:300px; height:300px;
+    margin:50px auto;
+    padding:100px 20px 100px 20px;
+    box-sizing: border-box;
+}
+
+
+.border .ex > span{
+    padding:50px;
+    border:10px solid red;
+    display: inline-block;
+}
+
+.border .ex > span:nth-child(1){
+    border-style:dotted;
+}
+.border .ex > span:nth-child(2){
+    border-style:dashed;
+}
+.border .ex > span:nth-child(3){
+    border-style:solid  dashed;
+    border-color:blue  transparent;  
+}
+
+/* 배경 */
+.bg .ex{}
+.bg .ex > p{
+    border:10px solid black;
+    height:400px;
+}
+.bg .ex > p:nth-child(1){
+    background-color: yellow;
+}
+.bg .ex > p:nth-child(2){
+    background: red url('../img/ck.jpg') 0 0 no-repeat;
+}
+.bg .ex > p:nth-child(3){
+    background: red url('../img/ck.jpg') center 0 / cover no-repeat fixed;
+
+    background-color: red;
+    background-image:url('../img/ck.jpg');
+    background-position:center 0;
+    background-size:cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
